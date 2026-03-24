@@ -1,0 +1,11 @@
+# Godot 4+
+.godot/
+.import/
+.export/
+
+# Android build
+/android/
+
+# Misc
+*.translation
+*.log
