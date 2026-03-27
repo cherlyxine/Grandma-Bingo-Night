@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b037xw1kodox1"]
+
+[ext_resource type="Script" uid="uid://c52nuhfwfhm4x" path="res://scripts/player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://brcl2onhx6ov" path="res://grandma ver 1.png" id="2_i3pqv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hqtel"]
+
+[node name="Player" type="CharacterBody2D" unique_id=636422772]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2140743862]
+position = Vector2(2.0000114, -7.6293945e-06)
+scale = Vector2(0.032073725, 0.03207372)
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1432879607]
+shape = SubResource("CircleShape2D_hqtel")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=313691470]
+zoom = Vector2(3, 3)
